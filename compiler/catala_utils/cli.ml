@@ -19,13 +19,13 @@
 
 type file = string
 type raw_file = file
-type backend_lang = En | Fr | Pl
+type backend_lang = En | Fr | Pl | Es
 type when_enum = Auto | Always | Never
 type message_format_enum = Human | GNU
 type input_src = FileName of file | Contents of string * file | Stdin of file
 
 (** Associates a {!type: Cli.backend_lang} with its string represtation. *)
-let languages = ["en", En; "fr", Fr; "pl", Pl]
+let languages = ["en", En; "fr", Fr; "pl", Pl; "es", Es]
 
 let language_code =
   let rl = List.map (fun (a, b) -> b, a) languages in

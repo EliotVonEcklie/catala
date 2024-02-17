@@ -28,6 +28,11 @@
   lexer_pl.ml
   (run %{bin:cppo} %{dep:lexer_pl.cppo.ml} %{dep:lexer.cppo.ml})))
 
+(rule
+ (with-stdout-to
+  lexer_es.ml
+  (run %{bin:cppo} %{dep:lexer_es.cppo.ml} %{dep:lexer.cppo.ml})))
+
 (menhir
  (modules tokens)
  (flags --only-tokens))
