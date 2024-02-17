@@ -1,0 +1,25 @@
+{
+    "name": "catala-es",
+    "displayName": "catala-es",
+    "description": "Syntax highlighting for Spanish Catala programs",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.48.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "catala_es",
+            "aliases": ["catala_es", "catala_es"],
+            "extensions": [".catala_es"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "catala_es",
+            "scopeName": "source.catala_es",
+            "path": "./syntaxes/catalavs.xml"
+        }]
+    }
+}

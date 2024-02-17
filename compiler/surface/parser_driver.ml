@@ -202,6 +202,7 @@ let localised_parser : Cli.backend_lang -> lexbuf -> Ast.source_file = function
   | En -> Parser_En.commands_or_includes
   | Fr -> Parser_Fr.commands_or_includes
   | Pl -> Parser_Pl.commands_or_includes
+  | Es -> Parser_Es.commands_or_includes
 
 (** Lightweight lexer for dependency *)
 
@@ -211,6 +212,7 @@ let lines (file : File.t) (language : Cli.backend_lang) =
     | En -> Lexer_en.lex_line
     | Fr -> Lexer_fr.lex_line
     | Pl -> Lexer_pl.lex_line
+    | Es -> Lexer_es.lex_line
   in
   let input = open_in file in
   try
