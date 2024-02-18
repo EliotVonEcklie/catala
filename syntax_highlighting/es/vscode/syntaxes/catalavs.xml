@@ -51,7 +51,7 @@
             <key>1</key>
             <dict>
               <key>name</key>
-              <string>markup.heading.title.catala_en</string>
+              <string>markup.heading.title.catala_es</string>
             </dict>
           </dict>
         </dict>
@@ -63,7 +63,7 @@
             <key>1</key>
             <dict>
               <key>name</key>
-              <string>markup.heading.subtitle.catala_en</string>
+              <string>markup.heading.subtitle.catala_es</string>
             </dict>
           </dict>
           <key>patterns</key>
@@ -80,7 +80,7 @@
             <key>1</key>
             <dict>
               <key>name</key>
-              <string>markup.heading.subtitle.catala_en</string>
+              <string>markup.heading.subtitle.catala_es</string>
             </dict>
           </dict>
         </dict>
@@ -88,7 +88,7 @@
           <key>match</key>
           <string>([^`])</string>
           <key>name</key>
-          <string>entity.law.catala_en</string>
+          <string>entity.law.catala_es</string>
         </dict>
         <dict>
           <key>begin</key>
@@ -98,7 +98,7 @@
             <key>1</key>
             <dict>
               <key>name</key>
-              <string>comment.block.documentation.catala_en</string>
+              <string>comment.block.documentation.catala_es</string>
             </dict>
           </dict>
           <key>patterns</key>
@@ -115,7 +115,7 @@
             <key>1</key>
             <dict>
               <key>name</key>
-              <string>comment.block.documentation.catala_en</string>
+              <string>comment.block.documentation.catala_es</string>
             </dict>
           </dict>
         </dict>
@@ -127,7 +127,7 @@
             <key>1</key>
             <dict>
               <key>name</key>
-              <string>comment.block.documentation.catala_en</string>
+              <string>comment.block.documentation.catala_es</string>
             </dict>
           </dict>
           <key>patterns</key>
@@ -144,7 +144,7 @@
             <key>1</key>
             <dict>
               <key>name</key>
-              <string>comment.block.documentation.catala_en</string>
+              <string>comment.block.documentation.catala_es</string>
             </dict>
           </dict>
         </dict>
@@ -158,87 +158,87 @@
           <key>match</key>
           <string>(\s*\#.*$)</string>
           <key>name</key>
-          <string>comment.line.catala_en</string>
+          <string>comment.line.catala_es</string>
         </dict>
         <dict>
           <key>match</key>
-          <string>(context|input|output|internal)(\s*)(|output)(\s+)([a-z\x{00e9}\x{00e8}\x{00e0}\x{00e2}\x{00f9}\x{00ee}\x{00ea}\x{0153}\x{00e7}][a-z\x{00e9}\x{00e8}\x{00e0}\x{00e2}\x{00f9}\x{00ee}\x{00ea}\x{0153}\x{00e7}A-Z\x{00c9}\x{00c8}\x{00c0}\x{00c2}\x{00d9}\x{00ce}\x{00ca}\x{0152}\x{00c7}0-9_\&apos;]*)</string>
+          <string>(contexto|entrada|salida|interno)(\s*)(|salida)(\s+)([a-z\x{00e9}\x{00e8}\x{00e0}\x{00e2}\x{00f9}\x{00ee}\x{00ea}\x{0153}\x{00e7}][a-z\x{00e9}\x{00e8}\x{00e0}\x{00e2}\x{00f9}\x{00ee}\x{00ea}\x{0153}\x{00e7}A-Z\x{00c9}\x{00c8}\x{00c0}\x{00c2}\x{00d9}\x{00ce}\x{00ca}\x{0152}\x{00c7}0-9_\&apos;]*)</string>
           <key>captures</key>
           <dict>
             <key>1</key>
             <dict>
               <key>name</key>
-              <string>keyword.other.catala_en</string>
+              <string>keyword.other.catala_es</string>
             </dict>
             <key>2</key>
             <dict>
               <key>name</key>
-              <string>text.catala_en</string>
+              <string>text.catala_es</string>
             </dict>
             <key>3</key>
             <dict>
               <key>name</key>
-              <string>keyword.other.catala_en</string>
+              <string>keyword.other.catala_es</string>
             </dict>
             <key>4</key>
             <dict>
               <key>name</key>
-              <string>text.catala_en</string>
+              <string>text.catala_es</string>
             </dict>
             <key>5</key>
             <dict>
               <key>name</key>
-              <string>entity.name.function.catala_en</string>
+              <string>entity.name.function.catala_es</string>
             </dict>
           </dict>
         </dict>
         <dict>
           <key>match</key>
-          <string>\b(match|with\s+pattern|fixed|by|decreasing|increasing|varies|with|we\s+have|let|in|such\s+that|exists|among|for|all|of|if|then|else|initial)\b</string>
+          <string>\b(coincidir|con\s+patrón|fijo|por|decreciendo|incrementando|varía|con|nosotros\s+tenemos|sea|en|tal\s+que|existe|entre|para|todo|de|si|entonces|sino|inicial)\b</string>
           <key>name</key>
-          <string>keyword.control.catala_en</string>
+          <string>keyword.control.catala_es</string>
         </dict>
         <dict>
           <key>match</key>
-          <string>\b(scope|depends\s+on|declaration|includes|list\s+of|content|optional|structure|enumeration|context|input|output|internal|rule|under\s+condition|condition|data|consequence|fulfilled|equals|assertion|definition|state|label|exception|anything)\b</string>
+          <string>\b(ámbito|depende\s+de|declaración|incluir|lista\s+de|contenido|opcional|estructura|enumeración|contexto|entrada|salida|interno|regla|bajo\s+condición|condición|dato|consecuencia|cumplida|igual\s+a|aserción|definición|estado|etiqueta|excepción|cualquiera)\b</string>
           <key>name</key>
-          <string>keyword.other.catala_en</string>
+          <string>keyword.other.catala_es</string>
         </dict>
         <dict>
           <key>match</key>
           <string>(\|[0-9]+\-[0-9]+\-[0-9]+\|)</string>
           <key>name</key>
-          <string>constant.numeric.catala_en</string>
+          <string>constant.numeric.catala_es</string>
         </dict>
         <dict>
           <key>match</key>
-          <string>\b(true|false)\b</string>
+          <string>\b(verdadero|falso)\b</string>
           <key>name</key>
-          <string>constant.catala_en</string>
+          <string>constant.catala_es</string>
         </dict>
         <dict>
           <key>match</key>
           <string>\b([0-9]+(,[0-9]*|))\b</string>
           <key>name</key>
-          <string>constant.numeric.catala_en</string>
+          <string>constant.numeric.catala_es</string>
         </dict>
         <dict>
           <key>match</key>
           <string>(\-\-|\;|\.|\,|\:|\(|\)|\[|\]|\{|\})</string>
           <key>name</key>
-          <string>punctuation.catala_en</string>
+          <string>punctuation.catala_es</string>
         </dict>
         <dict>
           <key>match</key>
-          <string>(\-\&gt;|\+\.|\+\@|\+\^|\+\$|\+|\-\.|\-\@|\-\^|\-\$|\-|\*\.|\*\@|\*\^|\*\$|\*|/\.|/\@|/\$|/|\!|&gt;\.|&gt;=\.|&lt;=\.|&lt;\.|&gt;\@|&gt;=\@|&lt;=\@|&lt;\@|&gt;\$|&gt;=\$|&lt;=\$|&lt;\$|&gt;\^|&gt;=\^|&lt;=\^|&lt;\^|&gt;|&gt;=|&lt;=|&lt;|=|not|or|xor|and|\$|%|year|month|day)</string>
+          <string>(\-\&gt;|\+\.|\+\@|\+\^|\+\$|\+|\-\.|\-\@|\-\^|\-\$|\-|\*\.|\*\@|\*\^|\*\$|\*|/\.|/\@|/\$|/|\!|&gt;\.|&gt;=\.|&lt;=\.|&lt;\.|&gt;\@|&gt;=\@|&lt;=\@|&lt;\@|&gt;\$|&gt;=\$|&lt;=\$|&lt;\$|&gt;\^|&gt;=\^|&lt;=\^|&lt;\^|&gt;|&gt;=|&lt;=|&lt;|=|no|o|o\s+bien|y|\$|%|año|mes|día)</string>
           <key>name</key>
-          <string>keyword.operator.catala_en</string>
+          <string>keyword.operator.catala_es</string>
         </dict>
         <dict>
           <key>match</key>
-          <string>\b(integer|boolean|date|duration|money|text|decimal|number|sum)\b</string>
+          <string>\b(entero|lógico|fecha|duración|dinero|texto|decimal|número|suma)\b</string>
           <key>name</key>
-          <string>support.type.catala_en</string>
+          <string>support.type.catala_es</string>
         </dict>
         <dict>
           <key>match</key>
@@ -248,17 +248,17 @@
             <key>1</key>
             <dict>
               <key>name</key>
-              <string>entity.name.class.catala_en</string>
+              <string>entity.name.class.catala_es</string>
             </dict>
             <key>2</key>
             <dict>
               <key>name</key>
-              <string>punctuation.catala_en</string>
+              <string>punctuation.catala_es</string>
             </dict>
             <key>3</key>
             <dict>
               <key>name</key>
-              <string>entity.name.function.catala_en</string>
+              <string>entity.name.function.catala_es</string>
             </dict>
           </dict>
         </dict>
@@ -270,17 +270,17 @@
             <key>1</key>
             <dict>
               <key>name</key>
-              <string>entity.name.function.catala_en</string>
+              <string>entity.name.function.catala_es</string>
             </dict>
             <key>2</key>
             <dict>
               <key>name</key>
-              <string>punctuation.catala_en</string>
+              <string>punctuation.catala_es</string>
             </dict>
             <key>3</key>
             <dict>
               <key>name</key>
-              <string>meta.variable_id.catala_en</string>
+              <string>meta.variable_id.catala_es</string>
             </dict>
           </dict>
         </dict>
@@ -288,13 +288,13 @@
           <key>match</key>
           <string>\b([a-z\x{00e9}\x{00e8}\x{00e0}\x{00e2}\x{00f9}\x{00ee}\x{00ea}\x{0153}\x{00e7}][a-z\x{00e9}\x{00e8}\x{00e0}\x{00e2}\x{00f9}\x{00ee}\x{00ea}\x{0153}\x{00e7}A-Z\x{00c9}\x{00c8}\x{00c0}\x{00c2}\x{00d9}\x{00ce}\x{00ca}\x{0152}\x{00c7}0-9_\&apos;]*)\b</string>
           <key>name</key>
-          <string>entity.name.function.catala_en</string>
+          <string>entity.name.function.catala_es</string>
         </dict>
         <dict>
           <key>match</key>
           <string>\b([A-Z\x{00c9}\x{00c8}\x{00c0}\x{00c2}\x{00d9}\x{00ce}\x{00ca}\x{0152}\x{00c7}][a-z\x{00e9}\x{00e8}\x{00e0}\x{00e2}\x{00f9}\x{00ee}\x{00ea}\x{0153}\x{00e7}A-Z\x{00c9}\x{00c8}\x{00c0}\x{00c2}\x{00d9}\x{00ce}\x{00ca}\x{0152}\x{00c7}0-9_\&apos;]*)\b</string>
           <key>name</key>
-          <string>entity.name.class.catala_en</string>
+          <string>entity.name.class.catala_es</string>
         </dict>
        </array>
     </dict>
@@ -306,7 +306,7 @@
           <key>match</key>
           <string>(.)</string>
           <key>name</key>
-          <string>markup.heading.title.catala_en</string>
+          <string>markup.heading.title.catala_es</string>
         </dict>
        </array>
     </dict>
@@ -318,7 +318,7 @@
           <key>match</key>
           <string>(.)</string>
           <key>name</key>
-          <string>markup.heading.subtitle.catala_en</string>
+          <string>markup.heading.subtitle.catala_es</string>
         </dict>
        </array>
     </dict>

@@ -98,7 +98,8 @@ let when_opt = Arg.enum ["auto", Auto; "always", Always; "never", Never]
 
 (* Some helpers for catala sources *)
 
-let extensions = [".catala_fr", Fr; ".catala_en", En; ".catala_pl", Pl]
+let extensions =
+  [".catala_fr", Fr; ".catala_en", En; ".catala_pl", Pl; ".catala_es", Es]
 
 let file_lang filename =
   List.assoc_opt (Filename.extension filename) extensions

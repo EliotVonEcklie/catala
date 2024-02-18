@@ -197,6 +197,7 @@ end
 module Parser_En = ParserAux (Lexer_en)
 module Parser_Fr = ParserAux (Lexer_fr)
 module Parser_Pl = ParserAux (Lexer_pl)
+module Parser_Es = ParserAux (Lexer_es)
 
 let localised_parser : Cli.backend_lang -> lexbuf -> Ast.source_file = function
   | En -> Parser_En.commands_or_includes

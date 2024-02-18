@@ -23,6 +23,7 @@ let lang_of_ext s =
     | "catala_en" -> Some Cli.En
     | "catala_fr" -> Some Cli.Fr
     | "catala_pl" -> Some Cli.Pl
+    | "catala_es" -> Some Cli.Es
     | _ -> failwith "Unknown Catala dialect"
   else None
 

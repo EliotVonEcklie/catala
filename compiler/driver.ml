@@ -20,7 +20,13 @@ open Shared_ast
 
 (** Associates a file extension with its corresponding {!type: Cli.backend_lang}
     string representation. *)
-let extensions = [".catala_fr", "fr"; ".catala_en", "en"; ".catala_pl", "pl"; ".catala_es", "es"]
+let extensions =
+  [
+    ".catala_fr", "fr";
+    ".catala_en", "en";
+    ".catala_pl", "pl";
+    ".catala_es", "es";
+  ]
 
 let modname_of_file f =
   (* Fixme: make this more robust *)

@@ -40,14 +40,16 @@ $(PY_VENV_DIR)/stamp: \
     runtimes/python/pyproject.toml \
     syntax_highlighting/en/pygments/pyproject.toml \
     syntax_highlighting/fr/pygments/pyproject.toml \
-    syntax_highlighting/pl/pygments/pyproject.toml
+    syntax_highlighting/pl/pygments/pyproject.toml \
+	syntax_highlighting/es/pygments/pyproject.toml
 	test -d $(PY_VENV_DIR) || python3 -m venv $(PY_VENV_DIR)
 	$(PY_VENV_ACTIVATE) python3 -m pip install -U pip
 	$(PY_VENV_ACTIVATE) python3 -m pip install -U \
 	  -e runtimes/python \
 	  -e syntax_highlighting/en/pygments \
 	  -e syntax_highlighting/fr/pygments \
-	  -e syntax_highlighting/pl/pygments
+	  -e syntax_highlighting/pl/pygments \
+	  -e syntax_highlighting/es/pygments
 	touch $@
 
 dependencies-python: $(PY_VENV_DIR)
@@ -137,12 +139,13 @@ format:
 SYNTAX_HIGHLIGHTING_FR=${CURDIR}/syntax_highlighting/fr
 SYNTAX_HIGHLIGHTING_EN=${CURDIR}/syntax_highlighting/en
 SYNTAX_HIGHLIGHTING_PL=${CURDIR}/syntax_highlighting/pl
+SYNTAX_HIGHLIGHTING_ES=${CURDIR}/syntax_highlighting/es
 
 pygmentize_%: $(PY_VENV_DIR)
 	$(PY_VENV_ACTIVATE) python3 -m pip install syntax_highlighting/$*/pygments
 
 #> pygments				: Extends your pygmentize executable with Catala lexers
-pygments: pygmentize_fr pygmentize_en pygmentize_pl
+pygments: pygmentize_fr pygmentize_en pygmentize_pl pygmentize_es
 
 atom_fr: ${CURDIR}/syntax_highlighting/fr/setup_atom.sh
 	chmod +x $<
@@ -167,13 +170,17 @@ vscode_en: ${CURDIR}/syntax_highlighting/en/setup_vscode.sh
 	chmod +x $<
 	$<
 
+vscode_es: ${CURDIR}/syntax_highlighting/es/setup_vscode.sh
+	chmod +x $<
+	$<
+
 # TODO
 # vscode_pl: ${CURDIR}/syntax_highlighting/pl/setup_vscode.sh
 # 	chmod +x $<
 # 	$<
 
 #> vscode					: Installs Catala syntax highlighting for VSCode
-vscode: vscode_fr vscode_en
+vscode: vscode_fr vscode_en vscode_es
 
 ##########################################
 # Extra documentation
@@ -272,7 +279,7 @@ clean:
 	rm -rf artifacts
 
 inspect:
-	gitinspector -f ml,mli,mly,iro,tex,catala,catala_en,catala_pl,catala_fr,md,fst,mld --grading
+	gitinspector -f ml,mli,mly,iro,tex,catala,catala_en,catala_pl,catala_fr,catala_es,md,fst,mld --grading
 
 #> help_clerk				: Display the clerk man page
 help_clerk:

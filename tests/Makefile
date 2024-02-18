@@ -11,7 +11,7 @@ CLERK=dune exec -- ../build_system/clerk.exe test \
 # Forces all the tests to be redone
 .FORCE:
 
-%.catala_en %.catala_fr %.catala_pl: .FORCE
+%.catala_en %.catala_fr %.catala_pl %.catala_es: .FORCE
 	$(CLERK) $@
 
 pass_all_tests:

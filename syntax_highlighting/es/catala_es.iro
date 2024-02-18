@@ -216,7 +216,7 @@ code : context {
   }
 
   : pattern {
-    regex \= \b(match|con\s+patrón|fijo|por|decreciendo|incrementando|varía|con|nosotros\s+tenemos|sea|en|ámbito|depende\s+de|declaración|incluir|contenido|regla|bajo\s+condición|condición|datos|consecuencia|cumplido|igual\s+a|aserción|definición|estado|etiqueta|excepción)\b
+    regex \= \b(coincidir|con\s+patrón|fijo|por|decreciendo|incrementando|varía|con|nosotros\s+tenemos|sea|en|ámbito|depende\s+de|declaración|incluir|contenido|regla|bajo\s+condición|condición|dato|consecuencia|cumplida|igual\s+a|aserción|definición|estado|etiqueta|excepción)\b
     styles [] = .keyword_expression ;
   }
 
@@ -248,7 +248,7 @@ code : context {
   }
 
   : pattern {
-     regex \= (\-\>|\+\.|\+\@|\+\^|\+\$|\+|\-\.|\-\@|\-\^|\-\$|\-|\*\.|\*\@|\*\^|\*\$|\*|/\.|/\@|/\$|/|\!|>\.|>=\.|<=\.|<\.|>\@|>=\@|<=\@|<\@|>\$|>=\$|<=\$|<\$|>\^|>=\^|<=\^|<\^|>|>=|<=|<|=|no|o|o\s+bien|and|\$|€|%|año|mes|día)
+     regex \= (\-\>|\+\.|\+\@|\+\^|\+\$|\+|\-\.|\-\@|\-\^|\-\$|\-|\*\.|\*\@|\*\^|\*\$|\*|/\.|/\@|/\$|/|\!|>\.|>=\.|<=\.|<\.|>\@|>=\@|<=\@|<\@|>\$|>=\$|<=\$|<\$|>\^|>=\^|<=\^|<\^|>|>=|<=|<|=|no|o|o\s+bien|y|\$|€|%|año|mes|día)
      styles [] = .operator;
   }
 
